@@ -1,10 +1,11 @@
 body{
     font-family:   New Century Schoolbook, TeX Gyre Schola, serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 main{
-	/*box-shadow: 30px 0px 40px rgb(196, 196, 196), -30px 0px 40px rgb(196, 196, 196);*/
-	margin: auto;
-	max-width: 900px;
+	max-width: 100%;
 }
 .skr{
 	display: flex;
@@ -17,7 +18,7 @@ header{
 	height: 160px;
 	padding-top: 10px;
 	
-	background-color: rgba(62, 59, 82, 0.925);
+	background-color: #94a6b2;
 	color: black;
 	
 }
@@ -33,17 +34,8 @@ header img{
 }
 .nom{
 	display: block;
-	margin-top:-20% ;
-	margin-left:30% ;
-	color: rgb(252, 247, 252);
-	letter-spacing: 1px;
+	color:#0d1d31;
 
-}
-.m1{
-	margin-top:-4% ;	
-}
-.m2{
-	margin-top: -2%;
 }
 .left .contact img{
 	width: 30px;
@@ -53,25 +45,8 @@ header img{
 	padding-top: 1px;
 	padding-bottom: 1px;
 }
-.left{
-	color: #f7f7f7;
-	float: left;
-	width: 300px;
-	background-color: #00324A;
-	height: 900%;
-	justify-content: space-around;
-	display: flex;
-}
-.right{
-	background-color: #fff;
-	float: right;
-	width: 550px;
-	height: 100%;
-
-}
 .right p{
 	color: rgb(82, 76, 76);
-	margin-top: -4%;
 }
 .left h3{
 	margin-right: 25%;
@@ -85,7 +60,70 @@ header img{
 
 
 
-
+.main{
+	width: 60%;
+	box-shadow: 0 0 8px -2px black;
+	margin: 50px auto;
+	background: #fff;
+}
+.img-ct{
+	width: 280px;
+}
+.nom{
+	width: calc(100% - 280px);
+	margin: 0;
+	/* padding: 15px; */
+}
+.top{
+	display: flex;
+	background-color: rgba(62, 59, 82, 0.925);
+	color: black;
+	align-items: center;
+}
+.bottom{
+	display: flex;
+}
+.left {
+	color: #f7f7f7;
+	width: 280px;
+	background-color: #353e4d;
+}
+.right {
+	width: calc(100% - 280px);
+}
+.image{
+	background-image: url(image/img.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 100%;
+}
+.ct {
+	padding: 15px;
+	/* padding-left: 55px; */
+}
+.addr{
+	display: flex;
+	align-items: center;
+}
+.addr span{
+	margin-left: 5px;
+}
+@media (max-width: 800px) {
+	.main {
+		width: 99%;
+		margin: 0 auto;
+	}
+	.top, .bottom{
+		flex-direction: column;
+	}
+	.right, .left, .nom, .img-ct{
+		width: 100%;
+	}
+}
 
 
 
